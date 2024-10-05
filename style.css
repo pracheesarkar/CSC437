@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(233, 239, 236);
+    * {
+        box-sizing: border-box; 
+      }
+
+      a {
+        color: black;
+      }
+      a:link {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+    .container{
+        display : flex;
+        margin-top: 20px;
+        flex-direction : row;
+        gap : 50px;
+        /*align-content: center;
+        flex-wrap: wrap;*/
+        padding: 10px;
+        
+        
+    }
+
+    [class ^="box-"]{
+        width: 140px;
+        height: 300px;
+        background-color: rgb(196, 218, 210);
+        border: 5px solid white;
+
+        /*font-size: 65px;*/
+
+        display : flex;
+        justify-content : center;
+        align-items : center;
+    }
+
+    .container2{
+        display : flex;
+        min-height: 100vh;
+        flex-direction : row;
+        gap: 5px;
+        
+    }
+
+    .navbar{
+        /*background-color: rgb(139, 193, 186);*/
+        background-color: rgb(106, 156, 137);
+        flex:1;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        flex: 5;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header, footer {
+        background-color: rgb(196, 218, 210);
+        min-height: 10vh;
+      }
+
+    article{
+        flex: 3
+    }
+     
+      
+    header, footer, article, nav {
+        padding: 1em;
+      }
+
+    .box-1{
+        font-size: 30px;
+        flex-grow: 1;
+    
+    }
+
+    .text{
+        padding: 16px;
+        font-size: 20px;
+    }
+}
